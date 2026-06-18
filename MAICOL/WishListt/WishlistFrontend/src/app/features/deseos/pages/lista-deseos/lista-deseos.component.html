@@ -1,0 +1,26 @@
+<h2>Mi Lista de Deseos</h2>
+
+<p class="mensaje" *ngIf="mensaje">{{ mensaje }}</p>
+
+<p *ngIf="cargando">Cargando lista de deseos...</p>
+
+<p *ngIf="!cargando && items.length === 0">Tu lista esta vacia</p>
+
+<div class="items" *ngIf="!cargando && items.length > 0">
+  <div class="item" *ngFor="let item of items">
+    <h3>{{ item.nombreProducto }}</h3>
+    <p>{{ item.descripcion }}</p>
+    <p><b>Precio:</b> ${{ item.precio }}</p>
+    <p><b>Stock actual:</b> {{ item.stockActual }}</p>
+
+    <p class="alerta" *ngIf="item.sinStock">
+      {{ item.mensajeNotificacion }}
+    </p>
+
+    <label>Cantidad:</label>
+    <input type="number" min="1" [(ngModel)]="item.cantidadDeseada">
+
+    <button (click)="actualizar(item)">Actualizar</button>
+    <button (click)="eliminar(item)">Eliminar</button>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background-color: #d62828;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #555;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #b00020;
+  color: white;
+}

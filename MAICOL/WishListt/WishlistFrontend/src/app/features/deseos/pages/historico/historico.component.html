@@ -1,0 +1,22 @@
+<h2>Historico de acciones</h2>
+
+<p class="mensaje" *ngIf="mensaje">{{ mensaje }}</p>
+
+<p *ngIf="cargando">Cargando historico...</p>
+
+<p *ngIf="!cargando && historico.length === 0">Aun no hay registros en el historico</p>
+
+<table *ngIf="!cargando && historico.length > 0">
+  <tr>
+    <th>Fecha</th>
+    <th>Producto</th>
+    <th>Cantidad</th>
+    <th>Accion</th>
+  </tr>
+  <tr *ngFor="let r of historico">
+    <td>{{ r.fechaAccion }}</td>
+    <td>{{ r.nombreProducto }}</td>
+    <td>{{ r.cantidad }}</td>
+    <td>{{ r.accion }}</td>
+  </tr>
+</table>

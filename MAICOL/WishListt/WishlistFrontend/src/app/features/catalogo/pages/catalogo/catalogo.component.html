@@ -1,0 +1,19 @@
+<h2>Catalogo de Productos</h2>
+
+<p class="mensaje" *ngIf="mensaje">{{ mensaje }}</p>
+
+<p *ngIf="cargando">Cargando catalogo...</p>
+
+<div class="productos" *ngIf="!cargando">
+  <div class="producto" *ngFor="let p of productos">
+    <h3>{{ p.nombre }}</h3>
+    <p>{{ p.descripcion }}</p>
+    <p><b>Categoria:</b> {{ p.categoria }}</p>
+    <p><b>Precio:</b> ${{ p.precio }}</p>
+    <p><b>Stock disponible:</b> {{ p.stock }}</p>
+
+    <button (click)="agregar(p)" [disabled]="p.stock === 0">
+      Agregar a mi lista
+    </button>
+  </div>
+</div>
