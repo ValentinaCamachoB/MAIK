@@ -49,7 +49,6 @@ public class Tarea {
         LocalDateTime ahora = LocalDateTime.now();
         this.fechaCreacion = ahora;
         this.fechaActualizacion = ahora;
-        // Si no se envio estado, se asigna PENDIENTE por defecto
         if (this.estado == null) {
             this.estado = EstadoTarea.PENDIENTE;
         }
