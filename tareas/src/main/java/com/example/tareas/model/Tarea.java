@@ -44,10 +44,6 @@ public class Tarea {
     @Column(name = "fecha_actualizacion", nullable = false)
     private LocalDateTime fechaActualizacion;
 
-    /**
-     * Se ejecuta UNA SOLA VEZ, justo antes de insertar la tarea en la BD.
-     * Asigna la fecha de creacion y de actualizacion automaticamente.
-     */
     @PrePersist
     public void asignarFechaCreacion() {
         LocalDateTime ahora = LocalDateTime.now();
@@ -59,10 +55,6 @@ public class Tarea {
         }
     }
 
-    /**
-     * Se ejecuta CADA VEZ antes de actualizar la tarea.
-     * Actualiza la fecha de actualizacion automaticamente.
-     */
     @PreUpdate
     public void actualizarFechaActualizacion() {
         this.fechaActualizacion = LocalDateTime.now();
