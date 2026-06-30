@@ -1,0 +1,14 @@
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\controller\TareaController.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\dto\ApiResponse.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\dto\CambiarEstadoDTO.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\dto\TareaRequestDTO.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\dto\TareaResponseDTO.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\exception\GlobalExceptionHandler.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\exception\TareaNotFoundException.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\exception\TransicionEstadoInvalidaException.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\model\EstadoTarea.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\model\PrioridadTarea.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\model\Tarea.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\repository\TareaRepository.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\service\TareaService.java
+C:\Users\valen\Documents\323\MAICOL\tareas\src\main\java\com\example\tareas\TareasApplication.java
