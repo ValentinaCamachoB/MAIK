@@ -1,0 +1,13 @@
+/* src/components/Introduccion/Introduccion.css */
+.introduccion {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introduccion__texto {
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}

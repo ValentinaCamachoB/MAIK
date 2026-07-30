@@ -1,0 +1,28 @@
+/* src/index.css */
+
+/* Reseteo básico: quitamos márgenes/paddings por defecto del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  scroll-behavior: smooth; /* scroll suave al navegar por anclas */
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+h1, h2, h3 {
+  color: #38bdf8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
