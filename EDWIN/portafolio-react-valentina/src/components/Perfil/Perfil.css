@@ -1,0 +1,30 @@
+/* src/components/Perfil/Perfil.css */
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.perfil__imagen {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+}
+
+.perfil__rol {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+/* Responsividad: la imagen se achica en móviles para no dominar la pantalla */
+@media (max-width: 600px) {
+  .perfil__imagen {
+    width: 130px;
+    height: 130px;
+  }
+}

@@ -1,0 +1,44 @@
+/* src/components/Header/Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header__logo {
+  font-size: 1.4rem;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__nav a {
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.header__nav a:hover {
+  color: #38bdf8;
+}
+
+/* Responsividad: en pantallas pequeñas, apilamos el menú debajo del logo */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
