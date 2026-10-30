@@ -1,6 +1,6 @@
 package com.example.tienda.dto;
 
-mport lombok.Data;
+import lombok.Data;
 
 @Data
 public class HttpGlobalResponseDTO<T> {
